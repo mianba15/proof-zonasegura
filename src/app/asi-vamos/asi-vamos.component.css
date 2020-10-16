@@ -1,0 +1,47 @@
+.registerHereWeGo {
+    background: #243982;
+    background: linear-gradient( 135deg, #243982 10%, #4466EE 60%);
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    position: relative;
+    width: 100%;
+}
+.registerHereWeGo:after {
+    content: '';
+    background: url(../../assets/images/bgImageAsiVamos.png);
+    background-repeat: no-repeat;
+    background-position-x: 30px;
+    background-position-y: -120px;
+    border-radius: 10px;
+    filter: invert(1);
+    height: 100%;
+    opacity: .2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    z-index: 0;
+}
+.contentRegisterHereWeGo {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.contentRegisterHereWeGo h3 {
+    background: url(../../assets/images/icon-book.png) no-repeat;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0;
+    padding-left: 25px;
+}
+.contentRegisterHereWeGo p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+

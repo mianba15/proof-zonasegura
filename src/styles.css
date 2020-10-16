@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap");
+
+body {
+    font-family: "Cabin", sans-serif !important;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong,
+a,
+input,
+textarea,
+button,
+label {
+    font-family: "Cabin", sans-serif !important;
+}
+html, body { height: 100%; }
+
+.barOrange .progress-outer {
+    background: #243982 !important;
+    border: none !important;
+    color: #fff;
+    margin: 30px 14% 20px 10% !important;
+    padding: 0 !important;
+    position: relative;
+    width: 76% !important;
+}
+.barOrange .progress-outer:before {
+    content: '0%';
+    font-size: 12px;
+    left: -8%;
+    line-height: 10px !important;
+    min-height: 10px !important;
+    position: absolute;
+    top: 0;
+}
+.barOrange .progress-outer:after {
+    content: '100%';
+    font-size: 12px;
+    line-height: 10px !important;
+    min-height: 10px !important;
+    position: absolute;
+    right: -12%;
+    top: 0;
+}
+.barOrange .progress-inner {
+    background-color: #ffc27a !important;
+    font-size: 12px !important;
+    line-height: 10px !important;
+    min-height: 10px !important;
+}
