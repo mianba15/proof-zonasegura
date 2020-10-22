@@ -1,0 +1,77 @@
+<!--<mat-tab-group>
+    <mat-tab *ngFor="let tab of asyncTabs | async">
+      <ng-template mat-tab-label>{{tab.label}}</ng-template>
+      {{tab.content}}
+    </mat-tab>
+  </mat-tab-group>--
+
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="First">Content 1</mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+
+
+<mat-tab-group>
+  <mat-tab label="Tab One">
+    Tab One Content
+  </mat-tab>
+  <mat-tab label="Tab Two">
+    Tab Two Content
+  </mat-tab>
+</mat-tab-group>-->
+
+<div class="row">
+  <div class="col-5">
+    <div class="nav flex-column nav-patients" id="tab-patients" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="medical-patients-tab" data-toggle="tab" href="#medical-patients" role="tab"
+        aria-controls="medical-patients" aria-selected="true">
+        <div class="patients">
+          <h3>Pacientes Médicos: 1000</h3>
+          <p>Tromboprofilaxis efectiva:</p>
+          <div class="barGreenSmall">
+            <progress-bar [progress]="80"></progress-bar>
+          </div>
+        </div>
+      </a>
+      <a class="nav-link" id="surgical-patients-tab" data-toggle="tab" href="#surgical-patients" role="tab"
+        aria-controls="surgical-patients" aria-selected="false">
+        <div class="patients">
+          <h3>Pacientes Quirúrgicos: 1000</h3>
+          <p>Tromboprofilaxis efectiva:</p>
+          <div class="barGreenSmall">
+            <progress-bar [progress]="80"></progress-bar>
+          </div>
+        </div>
+      </a>
+      <a class="nav-link" id="gynecological-patients-tab" data-toggle="tab" href="#gynecological-patients" role="tab"
+        aria-controls="gynecological-patients" aria-selected="false">
+        <div class="patients">
+          <h3>Pacientes Ginecológicos: 1000</h3>
+          <p>Tromboprofilaxis efectiva:</p>
+          <div class="barGreenSmall">
+            <progress-bar [progress]="80"></progress-bar>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-7">
+    <div class="tab-content" id="tab-patientsContent">
+      <div class="tab-pane fade show active" id="medical-patients" role="tabpanel"
+        aria-labelledby="medical-patients-tab">
+        <div style="display: block;">
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [colors]="barChartColors" [legend]="barChartLegend" [chartType]="barChartType">
+          </canvas>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="surgical-patients" role="tabpanel" aria-labelledby="surgical-patients-tab">
+        pacientes quirúrgicos
+      </div>
+      <div class="tab-pane fade" id="gynecological-patients" role="tabpanel"
+        aria-labelledby="gynecological-patients-tab">pacientes ginecológicos
+      </div>
+    </div>
+  </div>
+</div>

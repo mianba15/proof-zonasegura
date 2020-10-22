@@ -12,9 +12,18 @@ import { ChartsModule } from 'ng2-charts';
 import { PEvaluadosComponent } from './p-evaluados/p-evaluados.component';
 
 import { GoogleChartsModule } from 'angular-google-charts';
-
+import { MatTabsModule } from '@angular/material/tabs';
+import { TabsPacientesComponent } from './tabs-pacientes/tabs-pacientes.component';
+import { NgxDonutChartModule } from 'ngx-doughnut-chart';
+ 
 @NgModule({
-  declarations: [AppComponent, AsiVamosComponent, PacientesEvaluadosComponent, PEvaluadosComponent],
+  declarations: [
+    AppComponent,
+    AsiVamosComponent,
+    PacientesEvaluadosComponent,
+    PEvaluadosComponent,
+    TabsPacientesComponent,
+  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -22,11 +31,11 @@ import { GoogleChartsModule } from 'angular-google-charts';
     BrowserAnimationsModule,
     MatProgressBarModule,
     ChartsModule,
-    GoogleChartsModule
+    GoogleChartsModule,
+    MatTabsModule,
+    NgxDonutChartModule
   ],
-  exports: [
-    MatProgressBarModule
-  ],
+  exports: [MatProgressBarModule, NgxDonutChartModule],
   providers: [],
   bootstrap: [AppComponent],
 })

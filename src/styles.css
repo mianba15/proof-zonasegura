@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap");
 
 body {
-    font-family: "Cabin", sans-serif !important;
-    margin: 0;
+  font-family: "Cabin", sans-serif !important;
+  margin: 0;
 }
 h1,
 h2,
@@ -19,40 +19,169 @@ input,
 textarea,
 button,
 label {
-    font-family: "Cabin", sans-serif !important;
+  font-family: "Cabin", sans-serif !important;
 }
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
 .barOrange .progress-outer {
-    background: #243982 !important;
-    border: none !important;
-    color: #fff;
-    margin: 30px 14% 20px 10% !important;
-    padding: 0 !important;
-    position: relative;
-    width: 76% !important;
+  background: #243982 !important;
+  border: none !important;
+  color: #fff;
+  margin: 30px 14% 20px 10% !important;
+  padding: 0 !important;
+  position: relative;
+  width: 76% !important;
 }
 .barOrange .progress-outer:before {
-    content: '0%';
-    font-size: 12px;
-    left: -8%;
-    line-height: 10px !important;
-    min-height: 10px !important;
-    position: absolute;
-    top: 0;
+  content: "0%";
+  font-size: 12px;
+  left: -8%;
+  line-height: 10px !important;
+  min-height: 10px !important;
+  position: absolute;
+  top: 0;
 }
 .barOrange .progress-outer:after {
-    content: '100%';
-    font-size: 12px;
-    line-height: 10px !important;
-    min-height: 10px !important;
-    position: absolute;
-    right: -12%;
-    top: 0;
+  content: "100%";
+  font-size: 12px;
+  line-height: 10px !important;
+  min-height: 10px !important;
+  position: absolute;
+  right: -12%;
+  top: 0;
 }
 .barOrange .progress-inner {
-    background-color: #ffc27a !important;
-    font-size: 12px !important;
-    line-height: 10px !important;
-    min-height: 10px !important;
+  background-color: #ffc27a !important;
+  font-size: 12px !important;
+  line-height: 10px !important;
+  min-height: 10px !important;
+}
+
+.barOrangeSmall .progress-outer {
+  background: #243982 !important;
+  border: none !important;
+  color: #fff;
+  margin: 30px 14% 20px 10% !important;
+  padding: 0 !important;
+  position: relative;
+  width: 76% !important;
+}
+.barOrangeSmall .progress-outer:before {
+  content: "0%";
+  font-size: 12px;
+  left: -8%;
+  line-height: 10px !important;
+  min-height: 10px !important;
+  position: absolute;
+  top: 0;
+}
+.barOrangeSmall .progress-outer:after {
+  content: "100%";
+  font-size: 12px;
+  line-height: 10px !important;
+  min-height: 10px !important;
+  position: absolute;
+  right: -12%;
+  top: 0;
+}
+.barOrangeSmall .progress-inner {
+  background-color: #ffc27a !important;
+  font-size: 12px !important;
+  line-height: 10px !important;
+  min-height: 10px !important;
+}
+
+.barGreenSmall .progress-outer {
+  background: #7e1b19 !important;
+  border: none !important;
+  color: #fff;
+  margin: 30px 0 0 15% !important;
+  padding: 0 !important;
+  position: relative;
+  width: 60% !important;
+}
+.barGreenSmall .progress-outer:before {
+  content: "0%";
+  font-size: 12px;
+  left: -25px;
+  line-height: 10px !important;
+  min-height: 10px !important;
+  position: absolute;
+  top: 0;
+}
+.barGreenSmall .progress-outer:after {
+  content: "100%";
+  font-size: 12px;
+  line-height: 10px !important;
+  min-height: 10px !important;
+  position: absolute;
+  right: -40px;
+  top: 0;
+}
+.barGreenSmall .progress-inner {
+  background-color: #63e2b4 !important;
+  font-size: 12px !important;
+  line-height: 10px !important;
+  min-height: 10px !important;
+}
+
+.patients {
+  border-radius: 10px;
+  display: block;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.patients h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  padding-left: 25px;
+}
+.patients p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding-left: 25px;
+}
+
+.nav-patients {
+  display: block;
+}
+.nav-patients .nav-link {
+  background: url(assets/images/bgImageStadisticsWhite.jpg);
+  border-radius: 10px;
+  transition: ease 0.5s;
+  padding: 0;
+}
+.nav-patients .nav-link:hover,
+.nav-patients .nav-link.active {
+  background: url(assets/images/bgImageStadistics.jpg);
+  transition: ease 0.5s;
+}
+
+.nav-patients .nav-link > .patients {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.nav-patients .nav-link > .patients h3 {
+  color: #243982;
+  background: url(assets/images/icon-sheet-blue.png) no-repeat;
+}
+.nav-patients .nav-link > .patients p {
+  color: #8b91a3;
+}
+.nav-patients .nav-link:hover > .patients h3,
+.nav-patients .nav-link.active > .patients h3 {
+  color: white;
+  background: url(assets/images/icon-sheet-white.png) no-repeat;
+}
+.nav-patients .nav-link:hover > .patients p,
+.nav-patients .nav-link.active > .patients p {
+  color: white;
 }

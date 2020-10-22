@@ -1,16 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  ChartBase,
-  ChartEditorComponent,
-  ChartType,
-  FilterType,
-  ChartErrorEvent,
-  ChartMouseLeaveEvent,
-  ChartMouseOverEvent,
-  ChartSelectionChangedEvent,
-  Column,
-  GoogleChartComponent,
-} from 'angular-google-charts';
 
 @Component({
   selector: 'app-p-evaluados',
@@ -20,19 +8,33 @@ import {
 export class PEvaluadosComponent implements OnInit {
   constructor() {}
 
-  public changingChart: {
-   type: ChartType.PieChart,
-    data: [
-      ['Copper', 8.94],
-      ['Silver', 10.49],
-      ['Gold', 19.3],
-      ['Platinum', 21.45]
-    ];
-    columns: ['Element', 'Density'];
-    options: {
-      pieHole: 0.4;
-    };
+  myType = 'PieChart';
+  myData = [
+    ['Pacientes ginecologicos', 10],
+    ['Pacientes Quirurgicos', 80],
+    ['Pacientes Médicos', 200],
+  ];
+  options = {
+    pieHole: 0.3,
   };
 
   ngOnInit(): void {}
+
+  donutChartData = [
+    {
+      label: 'Liverpool FC',
+      value: 5,
+      color: 'red',
+    },
+    {
+      label: 'Real Madrid	',
+      value: 13,
+      color: 'black',
+    },
+    {
+      label: 'FC Bayern München',
+      value: 5,
+      color: 'blue',
+    },
+  ];
 }
